@@ -1,9 +1,14 @@
 <h2 align="center"> Lógica de Programação </h1>
----
+
 <p align="center">Crie seus primeiros programas usando Javascript e HTML</p>
+
 <div>
-   <div style="text-align:right"><img height="100em" src="https://i.stack.imgur.com/INdOQ.gif"></div>
-   <div style="align:left">
+   <img  height="130px" align="right" src="https://images-na.ssl-images-amazon.com/images/I/41ymd5PiiuL._SX342_SY445_QL70_ML2_.jpg">
+   <img  height="100em" align="right" src="https://i.stack.imgur.com/INdOQ.gif">
+</div>
+
+
+<div style="align:left">
       <p>
          <strong>alert</strong>
       </p>
@@ -110,9 +115,6 @@
       <p>
          <strong>for( ; ; )</strong>
       </p>
-   </div>
 </div>
-
-
 
 ---
