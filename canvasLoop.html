@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenhar quadrados!</title>
+</head>
+
+<body>
+  <canvas id="tela" width="600" height="400"></canvas>
+
+  <script>
+    var desenhaQuadradoPink = function (x, y) {
+      var tela = document.getElementById("tela");
+      var c = tela.getContext("2d");
+
+      c.fillStyle = "pink";
+      c.fillRect(x, y, 50, 50);
+
+      c.strokeStyle = "black";
+      c.strokeRect(x, y, 50, 50);
+    };
+
+    var desenhaQuadradoRoxo = function (x, y) {
+      var tela = document.getElementById("tela");
+      var c = tela.getContext("2d");
+
+      c.fillStyle = "purple";
+      c.fillRect(x, y, 50, 50);
+
+      c.strokeStyle = "black";
+      c.strokeRect(x, y, 50, 50);
+    };
+
+    for (var x = 0; x < 600; x = x + 50) {
+      desenhaQuadradoPink(x, 0);
+      desenhaQuadradoRoxo(x, 50);
+
+    }
+
+
+  </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,22 @@
+<meta Charset="UTF-8">
+<h1>Bandeira da Colômbia</h1>
+<canvas id="colombia" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+  var escala = 1.2;
+  var bandeira = document.getElementById("colombia");
+  bandeira.width *= escala;
+  bandeira.height *= escala;
+  var largura = bandeira.width;
+  var altura = bandeira.height;
+  var pincel = bandeira.getContext("2d");
+
+  pincel.fillStyle = "#FCD116";
+  pincel.fillRect(0, 0, largura, altura / 2);
+
+  pincel.fillStyle = "#003893";
+  pincel.fillRect(0, altura / 2, largura, altura / 4);
+
+  pincel.fillStyle = "#CE1126";
+  pincel.fillRect(0, altura * 3 / 4, largura, altura * 3 / 4);
+</script>

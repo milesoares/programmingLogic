@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Adivinha</title>
+</head>
+
+<body
+    style="font-family: 'Roboto Mono',monospace; min-height: 600px; background-image: url(https://tecnoblog.net/wp-content/uploads/2019/10/mario-kart-tour-001.jpg); background-size: cover; background-repeat: no-repeat;">
+
+    <script>
+        var mostra = function (frase) {
+            document.write(frase);
+        }
+
+        var numeroPensado = parseInt(Math.random() * 10);
+
+        var chute = prompt("Já pensei. Qual você acha que é o número?");
+        if (chute == numeroPensado) {
+            alert("Uau! Você acertou, pois, eu pensei no " + numeroPensado);
+        } else {
+            alert("Você errou! Eu tinha pensado no " + numeroPensado);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse</title>
+</head>
+
+<body>
+  <canvas id="tela" width="600" height="400"></canvas>
+
+  <script>
+    var tela = document.getElementById("tela");
+    var c = tela.getContext("2d");
+
+    c.fillStyle = "black";
+    c.fillRect(0, 0, 600, 400);
+
+    tela.onmousemove = function (evento) { //tela.onclick
+      var x = evento.pageX - tela.offsetLeft;
+      var y = evento.pageY - tela.offsetTop;
+
+      c.fillStyle = "darkblue";
+      c.beginPath();
+      c.arc(x, y, 10, 0, 2 * 3.14);
+      c.fill();
+
+      console.log("posição do clique : " + x + ", " + y);
+    }
+  </script>
+</body>
+
+</html>

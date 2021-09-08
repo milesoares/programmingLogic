@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loteria</title>
+</head>
+
+<body>
+  <input type="text" id="numero" />
+  <input type="submit" id="adivinhar" value="Compare com o meu segredo!" />
+
+  <script>
+    var segredos = [16, 34, 37, 42, 50, 58];
+    console.log(segredos);
+    var caixaDoNumero = document.getElementById("numero");
+
+    var botaoClicado = function () {
+      for (var i = 0; i < segredos.length; i = i + 1) {
+        if (segredos[i] == caixaDoNumero.value) {
+          alert("Parabéns! Você acertou um dos números secretos!");
+          return;
+        }
+      } alert("Infelizmente você errou!");
+    };
+
+    var botaoAdivinhar = document.getElementById("adivinhar");
+    botaoAdivinhar.onClick = botaoClicado;
+  </script>
+</body>
+
+</html>
